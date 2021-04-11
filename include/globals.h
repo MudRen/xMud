@@ -2,4 +2,4 @@
 #define USER_OB "/system/object/user"
 #define VOID_OB "/system/object/void"
 
-#define MOTD "/system/etc/motd"
+#define MOTD "/README.md"
