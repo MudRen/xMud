@@ -1,7 +1,12 @@
+int help(object me);
+
 int main(object me, string arg)
 {
     object eval_ob;
     string filename, file;
+
+    if (!arg)
+        return help(me);
 
     filename = "/tmp/debug_eval_file.c";
 
@@ -22,9 +27,8 @@ int help(object me)
 {
     write(@HELP
 指令格式 : eval <lpc code>
-
-测试专用，请先实现功能后运行。
-
+指令说明:
+    测试专用，可直接运行代码片断，如：`eval return me`
 HELP);
 
     return 1;
