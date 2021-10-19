@@ -1,5 +1,5 @@
 *.cmd
 *.exe
 *.log
-driver
+driver*
 bin

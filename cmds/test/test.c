@@ -11,5 +11,6 @@ int main(object me, string arg)
 
 int help()
 {
+    write("测试指令模板，需要自己实现具体代码后运行。\n");
     return 1;
 }
