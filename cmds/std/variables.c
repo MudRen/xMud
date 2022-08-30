@@ -43,6 +43,7 @@ int main(object me, string arg)
         if (!ob)
             return notify_fail("无法找到对象 " + arg + "。\n");
     }
+#ifdef FLUFFOS
     if (sizeof(vars = variables(ob, 1)))
         foreach (string *var in vars)
             if (strsrch(var[1], "private") == -1)
@@ -51,7 +52,9 @@ int main(object me, string arg)
                 printf("%s 是 %s 类型变量\n", var[0], var[1]);
     else
         return notify_fail("对象未声明任何全局变量。\n");
-
+#else
+    printf("variables = %O\n", variables(ob, 1));
+#endif
     return 1;
 }
 

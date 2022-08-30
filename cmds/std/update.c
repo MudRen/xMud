@@ -11,11 +11,6 @@ int main(object me, string file)
         return help(me);
     }
 
-    if (file == VOID_OB)
-    {
-        return notify_fail(HIY "你不能在 VOID_OB 里重新编译 VOID_OB。\n" NOR);
-    }
-
     write("重新编译[" + file + "]:");
 
     if (obj = find_object(file))
