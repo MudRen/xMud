@@ -4,7 +4,7 @@ int help(object me);
 
 int main(object me, string file)
 {
-    object env = environment(me), obj;
+    object obj;
 
     if (!file)
     {
