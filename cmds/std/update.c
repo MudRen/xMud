@@ -10,10 +10,6 @@ int main(object me, string file)
     {
         return help(me);
     }
-    if (file == "here")
-    {
-        file = base_name(env);
-    }
 
     if (file == VOID_OB)
     {
